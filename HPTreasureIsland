@@ -1,0 +1,23 @@
+print("Welcome to your first mission as Harry Potter: The Forbidden Forest")
+print("Your mission is to find what is killing the unicorns") 
+
+choice1 = input('You\'re in the middle of the dark forest with Fang (dog). Where do you want to go? Type "left" or "right" \n').lower()
+
+if choice1 == "left":
+  choice2 = input('You\'ve come to a place with really tall trees, its really really dark. Type "wait" to wait for Hagrid. Type "hide" to use the invisibility cloak. \n').lower()
+  if choice2 == "hide":
+    choice3 = input("Thanks to the cloak you are unharmed besides the pain in your scar. You have seen Voldemort drink the unicorn's blood. You need to get to Hogwarts to tell Dumbledore immediately! Or, do you? There are 3 magical passages into the castle without being seen. One is red and takes you to your common room, you can pretend nothing happend. Another is yellow and goes directly to the kitchen, after all this situation you need some pumpkin juice! you can tell someone later. The last one is purple and it takes you quite close to the headmaster office, you can tell him now, despite losing house points for being up at this hours. Which colour do you choose? \n").lower()
+   
+    if choice3 == "red":
+      print("You should not be in gryffindor, you have no courage! Game Over.")
+    elif choice3 == "yellow":
+      print("The house-elfes in the Hogwarts kitchen tell you off for being awake at those hours! 50 points taken and Game Over!")
+    elif choice3 == "purple":
+      print("Dumbledore appreciates the information and asks you to be silent about it. He also gives you 100 points for bravery, you Win!")
+
+    else:
+      print("You waited too long without using the cloak, Snape found you, you are now expelled, that means: Game Over.")
+  else:
+    print("A Centaur get offended by your presence and pushes you out of the forest. You haven't found anything and you need to get to the hospital, that means: Game Over.")
+else:
+  print("You fell into a hole and a Werewolf got you. You died instead of becoming one, that means: Game Over.")
